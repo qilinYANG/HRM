@@ -10,16 +10,12 @@
     <None Remove="Contacts\" />
     <None Remove="Contacts\Repositories\" />
     <None Remove="Contacts\Services\" />
-    <None Remove="Contacts\Entities\" />
-    <None Remove="Contacts\Exceptions\" />
-    <None Remove="Contacts\Models\" />
+    <None Remove="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Contacts\" />
     <Folder Include="Contacts\Repositories\" />
     <Folder Include="Contacts\Services\" />
-    <Folder Include="Contacts\Entities\" />
-    <Folder Include="Contacts\Exceptions\" />
-    <Folder Include="Contacts\Models\" />
+    <Folder Include="Models\" />
   </ItemGroup>
 </Project>
