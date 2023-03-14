@@ -6,4 +6,20 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Contacts\" />
+    <None Remove="Contacts\Repositories\" />
+    <None Remove="Contacts\Services\" />
+    <None Remove="Contacts\Entities\" />
+    <None Remove="Contacts\Exceptions\" />
+    <None Remove="Contacts\Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Contacts\" />
+    <Folder Include="Contacts\Repositories\" />
+    <Folder Include="Contacts\Services\" />
+    <Folder Include="Contacts\Entities\" />
+    <Folder Include="Contacts\Exceptions\" />
+    <Folder Include="Contacts\Models\" />
+  </ItemGroup>
 </Project>
