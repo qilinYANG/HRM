@@ -1,0 +1,44 @@
+﻿<Properties StartupConfiguration="{19D01D9B-708C-418B-B6AC-E452EFDCF415}|https">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.src.Recruiting.RecruitingWeb PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="src/Recruiting/RecruitingWeb/Program.cs">
+    <Files>
+      <File FileName="src/Recruiting/RecruitingWeb/Program.cs" Line="13" Column="45" />
+      <File FileName="src/Recruiting/RecruitingWeb/Controllers/JobsController.cs" Line="22" Column="1" />
+      <File FileName="src/Recruiting/RecruitingWeb/Views/Jobs/Index.cshtml" Line="1" Column="1" />
+      <File FileName="src/Recruiting/RecruitingWeb/Views/Home/Index.cshtml" Line="8" Column="7" />
+      <File FileName="src/Recruiting/RecruitingWeb/Controllers/HomeController.cs" Line="1" Column="1" />
+      <File FileName="src/Notes.txt" Line="8" Column="77" />
+      <File FileName="src/Recruiting/ApplicationCore/Entities/Job.cs" Line="29" Column="61" />
+      <File FileName="src/Recruiting/Infrastructure/Data/RecrutingDbContext.cs" Line="14" Column="45" />
+      <File FileName="src/Recruiting/RecruitingWeb/appsettings.json" Line="4" Column="100" />
+      <File FileName="src/Recruiting/ApplicationCore/Entities/JobStatusLookUp.cs" Line="8" Column="57" />
+      <File FileName="src/Recruiting/ApplicationCore/Entities/Candidate.cs" Line="22" Column="26" />
+      <File FileName="src/Recruiting/ApplicationCore/Entities/Submission.cs" Line="10" Column="51" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="HRM" expanded="True">
+            <Node name="src" expanded="True">
+              <Node name="Recruiting" expanded="True">
+                <Node name="Infrastructure" expanded="True">
+                  <Node name="Data" expanded="True" />
+                  <Node name="Services" expanded="True" />
+                </Node>
+                <Node name="RecruitingWeb" expanded="True">
+                  <Node name="Program.cs" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

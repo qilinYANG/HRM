@@ -4,15 +4,27 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Services/Recruiting/ApplicationCore/Contacts/Services/ISubmissionService.cs">
+    <Files>
+      <File FileName="Services/Recruiting/ApplicationCore/Contacts/Repositories/IBaseRepository.cs" Line="16" Column="2" />
+      <File FileName="Services/Recruiting/ApplicationCore/Contacts/Repositories/ICandidateRepository.cs" Line="9" Column="2" />
+      <File FileName="Services/Recruiting/ApplicationCore/Contacts/Repositories/IJobRepository.cs" Line="1" Column="1" />
+      <File FileName="Services/Recruiting/ApplicationCore/Contacts/Repositories/IStatusRepository.cs" Line="1" Column="1" />
+      <File FileName="Services/Recruiting/ApplicationCore/Contacts/Repositories/ISubmissionRepository.cs" Line="1" Column="1" />
+      <File FileName="Services/Recruiting/ApplicationCore/Contacts/Services/ICandidateService.cs" Line="1" Column="1" />
+      <File FileName="Services/Recruiting/ApplicationCore/Contacts/Services/IJobService.cs" Line="10" Column="2" />
+      <File FileName="Services/Recruiting/ApplicationCore/Models/JobResponseModel.cs" Line="8" Column="2" />
+      <File FileName="Services/Recruiting/ApplicationCore/Contacts/Services/ISubmissionService.cs" Line="1" Column="1" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="HRM" expanded="True">
-            <Node name="ApplicationCore" expanded="True">
-              <Node name="Contacts" expanded="True" />
+            <Node name="ApplicationCore" expanded="True" />
+            <Node name="Infrastructure" expanded="True">
+              <Node name="Services" selected="True" />
             </Node>
-            <Node name="Infrastructure" expanded="True" />
+            <Node name="RecruitingWeb" expanded="True" />
           </Node>
         </State>
       </Pad>

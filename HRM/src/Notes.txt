@@ -1,0 +1,24 @@
+
+ADO.NET => lower level API -> write lots of code
+
+Dapper is micro ORM from StackOverflow (collection of extenstion methods)
+Existing database
+Northwind, AdventureWorks
+
+var employees =  db.connection.execute <Employees>("select * from Employee")
+var employees =  db.connection.execute <Employees>("usp_GetEmployee");
+
+ORM => Object Relational Mapper
+data access code simpler and write less amount of code
+
+ Entity Framework -> Saves lots of time in creating/accessing the database
+ 1. You can create complete DB using C# code with code-first approach, concept called Migrations
+ 2. You can access database and CRUD operations with just C# (LINQ) without writing any SQL
+    Dapper/ADO.NET => SELECT * from Jobs where salary > 60000
+                    100000
+    EF             => var employees = Jobs.where(e => e.Salary > 60000).ToList();
+                                      SELECT * from Jobs where salary > 60000
+                      var employees = Jobs.ToList().where(e => e.Salary > 60000).ToList();
+                                      SELECT * from Jobs;
+                                      then the filter > 60000 is gonna happen in memory
+ 3. Can map the data to C# Entities 
