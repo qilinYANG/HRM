@@ -14,7 +14,7 @@ pool:
 
 variables:
   buildConfiguration: 'Release'
-  solutionPath: '**/**/**/Recruiting.API.csproj'
+  solutionPath: '**/Recruting.API.csproj'
   artifactName: 'RecrutingAPI'
 
 steps:
