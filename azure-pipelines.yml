@@ -9,7 +9,7 @@ trigger:
     - main
 
 pool:
-  name: 'TestAgent'
+  name: 'Qilin-MacBook-Pro'
   vmImage: 'ubuntu-latest'
 
 variables:
