@@ -9,9 +9,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{59A31682-0A18-40A2-B459-89AC360FD56E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Recruiting", "Recruiting", "{A3B7FD8E-2854-4A67-9719-67B057F2AF81}"
-	ProjectSection(SolutionItems) = preProject
-		src\Recruiting\Recruting.API\Recruting.API.csproj = src\Recruiting\Recruting.API\Recruting.API.csproj
-	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Interviews", "Interviews", "{20475128-0A52-485F-9A93-2A02A847C955}"
 EndProject
@@ -45,7 +42,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecruitingWeb", "src\Recrui
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{E1062522-1B1E-4612-94B8-5EA875FB4422}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "New Folder", "New Folder", "{3DC92B09-B6A7-4729-AC06-AED32FC56FE2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "copy.API", "src\Recruiting\copy.API\copy.API.csproj", "{BA3490E7-29AD-4442-8F41-C3F3BED9D0DA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,7 +66,7 @@ Global
 		{7DF4A5E0-DD87-4B4E-9CC6-B75F6FB53912} = {6E918CCF-2761-4754-8FD5-555AF6047A22}
 		{B1084473-C092-487C-937A-C7DCE9A9B788} = {A3B7FD8E-2854-4A67-9719-67B057F2AF81}
 		{ABA4CFC3-AEFB-4126-83D8-E17D4CCF8A69} = {A3B7FD8E-2854-4A67-9719-67B057F2AF81}
-		{3DC92B09-B6A7-4729-AC06-AED32FC56FE2} = {A3B7FD8E-2854-4A67-9719-67B057F2AF81}
+		{BA3490E7-29AD-4442-8F41-C3F3BED9D0DA} = {A3B7FD8E-2854-4A67-9719-67B057F2AF81}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{21F96699-3F42-4D0B-A1C6-5DA6DD8D82CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -120,5 +117,9 @@ Global
 		{E1062522-1B1E-4612-94B8-5EA875FB4422}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E1062522-1B1E-4612-94B8-5EA875FB4422}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E1062522-1B1E-4612-94B8-5EA875FB4422}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA3490E7-29AD-4442-8F41-C3F3BED9D0DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA3490E7-29AD-4442-8F41-C3F3BED9D0DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA3490E7-29AD-4442-8F41-C3F3BED9D0DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA3490E7-29AD-4442-8F41-C3F3BED9D0DA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
