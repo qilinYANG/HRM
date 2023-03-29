@@ -9,13 +9,13 @@ trigger:
     - main
 
 pool:
-  name: 'Qilin-MacBook-Pro'
+  name: 'TestAgent'
   vmImage: 'ubuntu-latest'
 
 variables:
   buildConfiguration: 'Release'
-  solutionPath: '**/Recruiting.API.csproj'
-  artifactName: 'myapp'
+  solutionPath: 'Recruiting.API.csproj'
+  artifactName: 'RecrutingAPI'
 
 steps:
 - task: UseDotNet@2
