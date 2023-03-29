@@ -1,7 +1,9 @@
 ﻿<Properties StartupConfiguration="{E1062522-1B1E-4612-94B8-5EA875FB4422}|Default">
-  <MonoDevelop.Ide.ItemProperties.src.Recruiting.Recruting.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workbench ActiveDocument="src/Recruiting/Infrastructure/Repositories/CandidateRepository.cs">
     <Files>
       <File FileName="src/Recruiting/RecruitingWeb/Views/Jobs/Create.cshtml" />
@@ -25,50 +27,21 @@
       <File FileName="src/Recruiting/ApplicationCore/Contracts/Services/ICandidateService.cs" />
       <File FileName="src/Recruiting/RecruitingWeb/Views/Jobs/Details.cshtml" />
       <File FileName="src/Recruiting/RecruitingWeb/Views/Jobs/Submission.cshtml" />
-      <File FileName="src/Recruting.API/Program.cs" />
-      <File FileName="src/Recruting.API/Controllers/JobsController.cs" />
-      <File FileName="src/Interviews/Interview.ApplicationCore/Class1.cs" />
-      <File FileName="src/Interviews/Interview.Infrastructure/Class1.cs" />
-      <File FileName="src/Onboarding/Onboarding.ApplicationCore/Class1.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="HRM" expanded="True">
             <Node name="src" expanded="True">
-              <Node name="OnBoarding" expanded="True">
-                <Node name="Onboarding.ApplicationCore" expanded="True" />
-                <Node name="Onboarding.Infrastructure" expanded="True" />
-              </Node>
-              <Node name="Recruiting" expanded="True">
-                <Node name="ApplicationCore" expanded="True">
-                  <Node name="Models" expanded="True" />
-                </Node>
-                <Node name="Infrastructure" expanded="True">
-                  <Node name="Repositories" expanded="True">
-                    <Node name="CandidateRepository.cs" selected="True" />
-                  </Node>
-                  <Node name="Services" expanded="True" />
-                </Node>
-                <Node name="RecruitingWeb" expanded="True">
-                  <Node name="Controllers" expanded="True" />
-                  <Node name="Infra" expanded="True" />
-                  <Node name="Models" expanded="True" />
-                  <Node name="Views" expanded="True">
-                    <Node name="Jobs" expanded="True" />
-                  </Node>
-                </Node>
-              </Node>
+              <Node name="Recruiting" expanded="True" selected="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.src.Recruiting.Recruting.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.ItemProperties.docker-compose PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.src.Recruiting.RecruitingWeb PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>
