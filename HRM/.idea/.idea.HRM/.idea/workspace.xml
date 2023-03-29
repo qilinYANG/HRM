@@ -8,17 +8,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58769068-dba8-4e51-a17b-007392ddff81" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.HRM/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Notes.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Recruiting/ApplicationCore/Models/JobResponseModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Recruiting/Infrastructure/Services/JobService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Recruiting/Infrastructure/Services/JobsMongoDbService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Recruiting/RecruitingWeb/Controllers/JobsController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HRM.sln" beforeDir="false" afterPath="$PROJECT_DIR$/HRM.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Recruiting/ApplicationCore/ApplicationCore.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Recruiting/ApplicationCore/ApplicationCore.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Recruiting/ApplicationCore/Contracts/Services/IJobService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Recruiting/ApplicationCore/Contracts/Services/IJobService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Recruiting/RecruitingWeb/Infra/RecruitingMiddleware.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.HRM/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HRM/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Notes.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Recruiting/RecruitingWeb/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Recruiting/RecruitingWeb/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Recruiting/RecruitingWeb/RecruitingWeb.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Recruiting/RecruitingWeb/RecruitingWeb.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +20,8 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/01f68086a1cc42f08bf5eee3cd0d34cd224000/c3/26c18a1e/ControllerFactoryProvider.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d32068398f924dd8adc4e18c2edbb6c01fc798/75/770ff9c6/DbContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d32068398f924dd8adc4e18c2edbb6c01fc798/d4/362bd360/ModelBuilder.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -40,24 +35,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.44772726&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "/Users/abhilash/Library/Application Support/JetBrains/Rider2022.3/resharper-host/DecompilerCache",
-      "/Users/abhilash/Library/Application Support/JetBrains/Rider2022.3/resharper-host/SourcesCache",
-      "/Users/abhilash/.local/share/Symbols/src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;/Users/abhilash/Library/Application Support/JetBrains/Rider2022.3/resharper-host/DecompilerCache&quot;,
+      &quot;/Users/abhilash/Library/Application Support/JetBrains/Rider2022.3/resharper-host/SourcesCache&quot;,
+      &quot;/Users/abhilash/.local/share/Symbols/src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.RecruitingWeb: http">
     <configuration name="ApplicationCore: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/Recruiting/ApplicationCore/ApplicationCore.csproj" />
@@ -128,7 +124,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678816473142</updated>
-      <workItem from="1678816474187" duration="8248000" />
+      <workItem from="1678816474187" duration="21235000" />
+      <workItem from="1679067012105" duration="9556000" />
+      <workItem from="1679334845102" duration="8035000" />
     </task>
     <servers />
   </component>
@@ -145,55 +143,68 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/src/Recruiting/RecruitingWeb/Controllers/JobsController.cs</url>
-          <line>13</line>
-          <properties documentPath="$PROJECT_DIR$/src/Recruiting/RecruitingWeb/Controllers/JobsController.cs" initialLine="12" containingFunctionPresentation="method 'Index'">
+          <line>46</line>
+          <properties documentPath="$PROJECT_DIR$/src/Recruiting/RecruitingWeb/Controllers/JobsController.cs" initialLine="45" containingFunctionPresentation="method 'Details'">
             <startOffsets>
-              <option value="371" />
+              <option value="1730" />
             </startOffsets>
             <endOffsets>
-              <option value="372" />
+              <option value="1773" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="1" />
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/src/Recruiting/RecruitingWeb/Controllers/JobsController.cs</url>
-          <line>24</line>
-          <properties documentPath="$PROJECT_DIR$/src/Recruiting/RecruitingWeb/Controllers/JobsController.cs" initialLine="29" containingFunctionPresentation="method 'Details'">
+          <line>60</line>
+          <properties documentPath="$PROJECT_DIR$/src/Recruiting/RecruitingWeb/Controllers/JobsController.cs" initialLine="60" containingFunctionPresentation="method 'Create'">
             <startOffsets>
-              <option value="714" />
+              <option value="2086" />
             </startOffsets>
             <endOffsets>
-              <option value="715" />
+              <option value="2087" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="3" />
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/Recruiting/RecruitingWeb/Controllers/JobsController.cs</url>
-          <line>10</line>
-          <properties documentPath="$PROJECT_DIR$/src/Recruiting/RecruitingWeb/Controllers/JobsController.cs" initialLine="15" containingFunctionPresentation="constructor 'JobsController'">
+          <url>file://$PROJECT_DIR$/src/Recruiting/Infrastructure/Repositories/BaseRepository.cs</url>
+          <line>41</line>
+          <properties documentPath="$PROJECT_DIR$/src/Recruiting/Infrastructure/Repositories/BaseRepository.cs" initialLine="41" containingFunctionPresentation="method 'AddAsync'">
             <startOffsets>
-              <option value="290" />
+              <option value="1064" />
             </startOffsets>
             <endOffsets>
-              <option value="315" />
+              <option value="1096" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="4" />
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/Recruiting/Infrastructure/Services/JobsMongoDbService.cs</url>
-          <line>10</line>
-          <properties documentPath="$PROJECT_DIR$/src/Recruiting/Infrastructure/Services/JobsMongoDbService.cs" initialLine="10" containingFunctionPresentation="method 'GetAllJobs'">
+          <url>file://$PROJECT_DIR$/src/Recruiting/Infrastructure/Services/JobService.cs</url>
+          <line>45</line>
+          <properties documentPath="$PROJECT_DIR$/src/Recruiting/Infrastructure/Services/JobService.cs" initialLine="45" containingFunctionPresentation="method 'AddJob'">
             <startOffsets>
-              <option value="249" />
+              <option value="1412" />
             </startOffsets>
             <endOffsets>
-              <option value="822" />
+              <option value="1684" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="6" />
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/Recruiting/RecruitingWeb/Infra/RecruitingMiddleware.cs</url>
+          <line>14</line>
+          <properties documentPath="$PROJECT_DIR$/src/Recruiting/RecruitingWeb/Infra/RecruitingMiddleware.cs" initialLine="14" containingFunctionPresentation="method 'Invoke'">
+            <startOffsets>
+              <option value="310" />
+            </startOffsets>
+            <endOffsets>
+              <option value="353" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

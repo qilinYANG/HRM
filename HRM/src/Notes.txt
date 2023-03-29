@@ -22,3 +22,92 @@ data access code simpler and write less amount of code
                                       SELECT * from Jobs;
                                       then the filter > 60000 is gonna happen in memory
  3. Can map the data to C# Entities 
+ 
+ 
+ Jobs => Jobs info  Id, Title, Desc, JobCode
+ Candidate => Candidates
+ Submissions => When candidates apply for the job Id, [CandidateId & JobId] => Unique constraint 
+ JobStatusLookUp => Open, Closed, pending closed, postponed
+  
+ Step 1 : Install EF Core tools package globally
+ Step 2 : First create an Entity -> C# object that represents a table in the database
+ Step 3 : Install required EF Core Packages from Nuget in projects
+          Microsoft.EntityFrameworkCore.SqlServer
+          Microsoft.EntityFrameworkCore.Design
+ Step 4 : In EF we have 2 very important classes 
+            DbContext => Represents your database 
+            DbSet => Represents your tables 
+ Step 5 : Create the DbContext class and DbSet properties for the project
+ Step 6 : Create the Database ConnectionString, and establish that connectionString with the DbContext
+            Keep ConnectionStrings if locally in the project in appsettings.json
+            user secrets
+            Azure KeyVault
+            "RecruitingDbConnection": "Server=Abhilash-PC;Database=RecruitingDb;Integrated Security=True;"
+ Step 7 : Establish that connectionString with the DbContext using DI using the AddDbContext method
+ Step 8 : Create your first Migration using dotnet ef tools commands 
+          dotnet ef migrations add InitialMigration -p ../Infrastructure/Infrastructure.csproj
+ Step 9 : Always, check your migration file and see if it has things that you are trying to create.
+ Step 10 :Apply the migration using command
+           dotnet ef database update
+ Step 11 : To Model your database with rules, constraints etc we cam do in two ways
+            1. Data Annotations
+            2. Fluent API 
+            
+            
+  asynchorous programming -> 2002
+  async/await -> 2012  older .net framework 4.5
+  
+  
+  
+  
+  T1
+   public async  Task< IActionResult> Index()
+          {
+             
+             var x = 10;
+             // database
+             // I/O bound -> go to this URL and fetch me some data/image network, file download
+             // database calls
+             // theradpool
+            
+             // waiting 
+             //  prevent Thread starvation
+              var jobs = await _jobService.GetAllJobs(); -> returning task
+              return View();
+              // therad starvation, scalability of our application
+          }
+
+To do validations we use Dataannotations
+
+IRepository<Candidate> -> BaseRepository<Candidate>
+
+Middleware ->  Request  that will request will go thru series of code and they will return back in reverse order
+
+
+R -> M1 (check the user is authenticated, check the http header and maybe read some http info)
+     M2 (some logic)
+     M3
+     
+ 
+Response
+ 
+ Built-in Middlewares
+ Custom middlewares
+ Register them in proper order
+ 
+ 
+ Home Page list all the Jobs -> foe each and every job you should give option (link) to see submissions for the job
+ 
+ Click on Job Title should go to Jobs/Details -> Apply button (POST) to Submissions table
+    Candidate FirstName, LastName, Email (show Job Code and Title)
+    When saving the submission check if the an submission already exists for that email
+ Create New Jon button on Jobs list Page 
+    Create New Job should be using Validations and also should have dropdown (research) for JobStatus
+    Create New Job and Save to Database
+ 
+ 
+ 
+ 
+ 
+
+

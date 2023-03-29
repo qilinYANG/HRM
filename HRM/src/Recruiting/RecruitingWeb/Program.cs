@@ -1,20 +1,23 @@
+using ApplicationCore.Contracts.Repositories;
 using ApplicationCore.Contracts.Services;
 using Infrastructure.Data;
+using Infrastructure.Repositories;
 using Infrastructure.Services;
 using Microsoft.EntityFrameworkCore;
+using RecruitingWeb.Infra;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Services.AddScoped<IJobService, JobsMongoDbService>();
-
-
-// injection connectionstring into DbContext
-
-builder.Services.AddDbContext<RecrutingDbContext>(
+builder.Services.AddScoped<IJobService, JobService>();
+builder.Services.AddScoped<ICandidateService, CandidateService>();
+builder.Services.AddScoped<IJobRepository, JobRepository>();
+builder.Services.AddScoped<ICandidateRepository, CandidateRepository>();
+// Inject our ConnectionString into DbContext
+builder.Services.AddDbContext<RecruitingDbContext>(
     options => options.UseSqlServer(builder.Configuration.GetConnectionString("RecruitingDbConnection"))
-    );
+);
 
 // Ninject and autofac
 
@@ -28,6 +31,14 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+/*if (app.Environment.IsDevelopment())
+{
+    app.UseExceptionHandler("Home/DevException");
+
+}*/
+
+app.UseRecruitingMiddleware();
+
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
@@ -36,7 +47,7 @@ app.UseRouting();
 app.UseAuthorization();
 
 app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    "default",
+    "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();

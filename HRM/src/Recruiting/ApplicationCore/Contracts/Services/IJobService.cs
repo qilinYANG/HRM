@@ -1,10 +1,11 @@
 ﻿using ApplicationCore.Models;
 
-namespace ApplicationCore.Contracts.Services
+namespace ApplicationCore.Contracts.Services;
+
+public interface IJobService
 {
-    public interface IJobService
-    {
-        List<JobResponseModel> GetAllJobs();
-        JobResponseModel GetJobById(int id);
-    }
+    Task<List<JobResponseModel>> GetAllJobs();
+    Task<JobResponseModel> GetJobById(int id);
+
+    Task<int> AddJob(JobRequestModel model);
 }

@@ -11,9 +11,9 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Infrastructure.Migrations
 {
-    [DbContext(typeof(RecrutingDbContext))]
-    [Migration("20230316162050_InitialMigration")]
-    partial class InitialMigration
+    [DbContext(typeof(RecruitingDbContext))]
+    [Migration("20230315201613_JobStatusLookUpTable")]
+    partial class JobStatusLookUpTable
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -32,9 +32,6 @@ namespace Infrastructure.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<DateTime>("CreatedOn")
-                        .HasColumnType("datetime2");
 
                     b.Property<string>("Email")
                         .IsRequired()
@@ -135,42 +132,6 @@ namespace Infrastructure.Migrations
                     b.ToTable("JobStatusLookUps");
                 });
 
-            modelBuilder.Entity("ApplicationCore.Entities.Submission", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("CandidateId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("JobId")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime?>("RejectedOn")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("RejectedReason")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime?>("SelectedForInterview")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime?>("SubmittedOn")
-                        .HasColumnType("datetime2");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("CandidateId");
-
-                    b.HasIndex("JobId");
-
-                    b.ToTable("Submissions");
-                });
-
             modelBuilder.Entity("ApplicationCore.Entities.Job", b =>
                 {
                     b.HasOne("ApplicationCore.Entities.JobStatusLookUp", "JobStatusLookUp")
@@ -180,30 +141,6 @@ namespace Infrastructure.Migrations
                         .IsRequired();
 
                     b.Navigation("JobStatusLookUp");
-                });
-
-            modelBuilder.Entity("ApplicationCore.Entities.Submission", b =>
-                {
-                    b.HasOne("ApplicationCore.Entities.Candidate", "Candidate")
-                        .WithMany("Submissions")
-                        .HasForeignKey("CandidateId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("ApplicationCore.Entities.Job", "Job")
-                        .WithMany()
-                        .HasForeignKey("JobId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Candidate");
-
-                    b.Navigation("Job");
-                });
-
-            modelBuilder.Entity("ApplicationCore.Entities.Candidate", b =>
-                {
-                    b.Navigation("Submissions");
                 });
 #pragma warning restore 612, 618
         }
